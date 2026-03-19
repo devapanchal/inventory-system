@@ -17,5 +17,8 @@ Tech Stack
 Description
 This project allows users to manage product inventory efficiently. Data is stored and retrieved in real-time using Firebase.
 
+Live Demo
+https://thunderous-gnome-23ce6c.netlify.app/
+
 Author
 Dev
