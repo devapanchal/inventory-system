@@ -1,22 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Inventory System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory System | Welcome</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark auth-body">
+    <main class="auth-shell">
+        <section class="auth-hero">
+            <span class="eyebrow">Inventory SaaS</span>
+            <h1>Manage stock with a cleaner, faster dashboard.</h1>
+            <p>
+                Track products, monitor low stock, and work in real time with a
+                responsive inventory workflow built for daily use.
+            </p>
+            <div class="hero-points">
+                <div class="hero-point">Real-time product updates</div>
+                <div class="hero-point">Quick search and editing</div>
+                <div class="hero-point">Guest mode for demo access</div>
+            </div>
+        </section>
 
-    <h1>📦 Inventory Management System</h1>
+        <section class="auth-card">
+            <div class="auth-card-header">
+                <div>
+                    <span class="eyebrow">Welcome Back</span>
+                    <h2>Access your workspace</h2>
+                </div>
+                <button class="theme-toggle" type="button" onclick="toggleDark()">
+                    Toggle Theme
+                </button>
+            </div>
 
-    <div class="form">
-        <input type="text" id="name" placeholder="Product Name">
-        <input type="number" id="quantity" placeholder="Quantity">
-        <button onclick="addProduct()">Add Product</button>
-    </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com" autocomplete="email">
+            </div>
 
-    <h2>Product List</h2>
-    <ul id="productList"></ul>
-<script type="module" src="script.js"></script>
-   
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" autocomplete="current-password">
+            </div>
+
+            <div class="auth-actions">
+                <button class="btn btn-primary" type="button" onclick="login()">Login</button>
+                <button class="btn btn-secondary" type="button" onclick="signup()">Create Account</button>
+            </div>
+
+            <div class="divider"><span>or</span></div>
+
+            <button class="btn btn-ghost btn-block" type="button" onclick="continueGuest()">
+                Continue as Guest
+            </button>
+        </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
