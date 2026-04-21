@@ -125,6 +125,11 @@ Then open:
 http://localhost:5500
 ```
 
+## Live Demo
+
+- Main App: https://inventorymanagementw.netlify.app/
+- Dashboard: https://inventorymanagementw.netlify.app/dashboard.html
+
 ## Future Improvements
 
 - Product filters by category
